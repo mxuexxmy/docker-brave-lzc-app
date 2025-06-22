@@ -1,0 +1,8 @@
+services:
+  brave:
+    container_name: Brave
+    image: ghcr.io/linuxserver/brave:latest
+    ports:
+      - 3934:3000
+    volumes:
+      - /volume1/docker/brave:/config

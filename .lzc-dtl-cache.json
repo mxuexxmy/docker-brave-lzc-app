@@ -1,0 +1,28 @@
+{
+  "name": "Brave browser",
+  "package": "xyz.mxue.bravebrowser",
+  "description": "Brave浏览器是一个快速,私密和安全的Web浏览器,适用于PC,Mac和移动。",
+  "homepage": "https://github.com/linuxserver/docker-brave",
+  "author": "linuxserver",
+  "app_features": [
+    "multi_instance"
+  ],
+  "subdomain": "bravebrowser",
+  "version": "0.0.1",
+  "iconPath": "icon.png",
+  "composePath": "docker-compose.yml",
+  "unsupported_platforms": [],
+  "lastRouteType": "from_compose",
+  "port_mappings": {
+    "brave_3934_3000": {
+      "use": true,
+      "type": "http",
+      "path": "/",
+      "targetPath": "/"
+    }
+  },
+  "image_ghcr.io_linuxserver_brave_latest": {
+    "originalImage": "ghcr.io/linuxserver/brave:latest",
+    "pushTarget": "lazycat"
+  }
+}
