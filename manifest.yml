@@ -1,0 +1,21 @@
+lzc-sdk-version: "0.1"
+name: Brave browser
+package: xyz.mxue.bravebrowser
+version: 0.0.1
+description: Brave浏览器是一个快速,私密和安全的Web浏览器,适用于PC,Mac和移动。
+homepage: https://github.com/linuxserver/docker-brave
+author: linuxserver
+application:
+  subdomain: bravebrowser
+  background_task: false
+  multi_instance: true
+  gpu_accel: false
+  kvm_accel: false
+  usb_accel: false
+  routes:
+    - /=http://brave.xyz.mxue.bravebrowser.lzcapp:3000/
+services:
+  brave:
+    image: registry.lazycat.cloud/mxuexxmy/linuxserver/brave:2d182b945e3ad0bf
+    binds:
+      - /lzcapp/var/config:/config

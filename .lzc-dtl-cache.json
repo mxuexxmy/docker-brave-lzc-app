@@ -23,6 +23,10 @@
   },
   "image_ghcr.io_linuxserver_brave_latest": {
     "originalImage": "ghcr.io/linuxserver/brave:latest",
-    "pushTarget": "lazycat"
-  }
+    "pushTarget": "lazycat",
+    "newImageName": "registry.lazycat.cloud/mxuexxmy/linuxserver/brave:2d182b945e3ad0bf",
+    "timestamp": "2025-06-22T15:08:07.043Z"
+  },
+  "brave_volume_/config_action": "emptyDir",
+  "brave_volume_/config_location": "app_data"
 }
